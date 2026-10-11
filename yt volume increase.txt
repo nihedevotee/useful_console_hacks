@@ -1,0 +1,9 @@
+const video = document.querySelector('video');
+const ctx = new AudioContext();
+const src = ctx.createMediaElementSource(video);
+const gainNode = ctx.createGain();
+
+gainNode.gain.value = 2; // 2 = 200%, go higher if needed
+
+src.connect(gainNode);
+gainNode.connect(ctx.destination);
