@@ -1,0 +1,3 @@
+// dark modeeeeeeeee
+const element = document.querySelector("body");
+element.style.filter = "invert(0.99) sepia(0.15) hue-rotate(-10deg)";
