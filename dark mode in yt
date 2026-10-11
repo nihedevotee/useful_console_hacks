@@ -1,0 +1,2 @@
+// make yt videos dark mode
+document.querySelector('video').style.filter = 'invert(1)';
